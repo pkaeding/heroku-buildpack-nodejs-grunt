@@ -187,6 +187,7 @@ if [ -f $BUILD_DIR/grunt.js ] || [ -f $BUILD_DIR/Gruntfile.js ] || [ -f $BUILD_D
   # make sure that grunt and grunt-cli are installed locally
   run_npm "install grunt-cli"
   run_npm "install grunt"
+  run_npm "install bower"
   echo "-----> Found Gruntfile, running grunt heroku:$NODE_ENV task"
   $BUILD_DIR/node_modules/.bin/grunt heroku:$NODE_ENV
 else
